@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.position-item {
+  border: 1px solid green;
+  padding: 10px 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.canvas-box {
+  border: 2px solid green;
+  width: 1280px;
+  height: 550px;
+  position: relative !important;
+  margin: 0 20px;
+  background-image: url(./grid.png);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drag-area {
+  width: 1280px;
+  height: 60px;
+  border: tomato 2px solid;
+  padding: 20px 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  margin: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.square-table {
+  padding: 15px 12px 12px;
+  border: 2px solid black;
+  width: 30px;
+  height: 30px;
+  cursor: move;
+  margin: 0 10px;
+  background-color: white;
+  text-align: center;
+  background-color: rgba(76, 0, 130, 0.678);
+  color: #fff;
+  z-index: 10;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rectangle-table {
+  padding: 15px 12px 12px;
+  border: 2px solid black;
+  width: 60px;
+  height: 30px;
+  cursor: move;
+  margin: 0 10px;
+  background-color: white;
+  text-align: center;
+  background-color: rgba(0, 130, 17, 0.678);
+  color: #fff;
+  z-index: 10;
+}
+.circle-table {
+  padding: 15px 12px 12px;
+  border: 2px solid black;
+  background-color: lightcoral;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: move;
+  margin: 0 10px;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+.circle-table:hover {
+  border-radius: 0;
+}
+h3 {
+  margin-left: 20px;
 }
