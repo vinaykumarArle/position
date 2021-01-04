@@ -1,95 +1,31 @@
 import { useState } from 'react';
 import './App.css';
 import Table from './table';
-// import T from './tables.json'
+import T from './tables.json'
+var uItems = [];
+var tables = T.tables;
 function App() {
 
-  const [table, setTable] = useState([
-    {
-      "id": 1,
-      "tableName": "T1",
-      "ClassName": "square-table",
-      "status": "NM"
-    },
-    {
-      "id": 2,
-      "tableName": "T2",
-      "ClassName": "square-table",
-      "status": "NM"
-    },
-    {
-      "id": 3,
-      "tableName": "T3",
-      "ClassName": "square-table",
-      "status": "NM"
-    },
-    {
-      "id": 4,
-      "tableName": "T4",
-      "ClassName": "square-table",
-      "status": "NM"
-    },
-    {
-      "id": 5,
-      "tableName": "C1",
-      "ClassName": "circle-table",
-      "status": "NM"
-    },
-    {
-      "id": 6,
-      "tableName": "C2",
-      "ClassName": "circle-table",
-      "status": "NM"
-    },
-    {
-      "id": 7,
-      "tableName": "C3",
-      "ClassName": "circle-table",
-      "status": "NM"
-    },
-    {
-      "id": 9,
-      "tableName": "C4",
-      "ClassName": "circle-table",
-      "status": "NM"
-    },
-    {
-      "id": 10,
-      "tableName": "R1",
-      "ClassName": "rectangle-table",
-      "status": "NM"
-    },
-    {
-      "id": 11,
-      "tableName": "R2",
-      "ClassName": "rectangle-table",
-      "status": "NM"
-    },
-    {
-      "id": 12,
-      "tableName": "R3",
-      "ClassName": "rectangle-table",
-      "status": "NM"
-    },
-    {
-      "id": 13,
-      "tableName": "R4",
-      "ClassName": "rectangle-table",
-      "status": "NM"
-    }
-  ]);
+  const [table, setTable] = useState(tables);
 
   const allowDrop = (e) => {
     e.preventDefault();
     // console.log(table)
   }
 
+
   const UpdateTable = (id) => {
-    const rItem = table.find(item => item.id === id);
+    let rItem = table.find(item => item.id === id);
     rItem.status = "dropped";
     setTable(table.filter(item => item.id !== id).concat(rItem));
-    console.log({ table })
+    uItems.push(rItem);
+    console.log({ table, uItems })
+
+    // console.log(table[id-1].status)
+
   }
+
+
   return (
 
     <div className="App">

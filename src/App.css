@@ -28,7 +28,7 @@
   margin: 0 10px;
   background-color: white;
   text-align: center;
-  background-color: rgba(76, 0, 130, 0.678);
+  background-color: rgb(76, 0, 130);
   color: #fff;
   z-index: 10;
 }
@@ -41,7 +41,7 @@
   margin: 0 10px;
   background-color: white;
   text-align: center;
-  background-color: rgba(0, 130, 17, 0.678);
+  background-color: rgb(0, 130, 17);
   color: #fff;
   z-index: 10;
 }

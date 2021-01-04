@@ -3,63 +3,75 @@
         {
             "id": 1,
             "tableName": "T1",
-            "ClassName": "square-table"
-        },
-        {
+            "ClassName": "square-table",
+            "status": "NM"
+          },
+          {
             "id": 2,
             "tableName": "T2",
-            "ClassName": "square-table"
-        },
-        {
+            "ClassName": "square-table",
+            "status": "NM"
+          },
+          {
             "id": 3,
             "tableName": "T3",
-            "ClassName": "square-table"
-        },
-        {
+            "ClassName": "square-table",
+            "status": "NM"
+          },
+          {
             "id": 4,
             "tableName": "T4",
-            "ClassName": "square-table"
-        },
-        {
+            "ClassName": "square-table",
+            "status": "NM"
+          },
+          {
             "id": 5,
             "tableName": "C1",
-            "ClassName": "circle-table"
-        },
-        {
+            "ClassName": "circle-table",
+            "status": "NM"
+          },
+          {
             "id": 6,
             "tableName": "C2",
-            "ClassName": "circle-table"
-        },
-        {
+            "ClassName": "circle-table",
+            "status": "NM"
+          },
+          {
             "id": 7,
             "tableName": "C3",
-            "ClassName": "circle-table"
-        },
-        {
-            "id": 9,
+            "ClassName": "circle-table",
+            "status": "NM"
+          },
+          {
+            "id": 8,
             "tableName": "C4",
-            "ClassName": "circle-table"
-        },
-        {
-            "id": 10,
+            "ClassName": "circle-table",
+            "status": "NM"
+          },
+          {
+            "id": 9,
             "tableName": "R1",
-            "ClassName": "rectangle-table"
-        },
-        {
-            "id": 11,
+            "ClassName": "rectangle-table",
+            "status": "NM"
+          },
+          {
+            "id": 10,
             "tableName": "R2",
-            "ClassName": "rectangle-table"
-        },
-        {
-            "id": 12,
+            "ClassName": "rectangle-table",
+            "status": "NM"
+          },
+          {
+            "id": 11,
             "tableName": "R3",
-            "ClassName": "rectangle-table"
-        },
-        {
-            "id": 13,
+            "ClassName": "rectangle-table",
+            "status": "NM"
+          },
+          {
+            "id": 12,
             "tableName": "R4",
-            "ClassName": "rectangle-table"
-        }
+            "ClassName": "rectangle-table",
+            "status": "NM"
+          }
         
     ]
 
