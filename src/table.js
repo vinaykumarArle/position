@@ -7,27 +7,21 @@ const Table = (props) => {
         let left = e.pageX;
         let top = e.pageY;
 
-        // console.log("state Before Update: ", props.state)
-        // console.log("Before Update: ", props.state.status)
-
-        props.UpdateTable(props.id);
-
-
-        // console.log("state After Update: ", props.state)
-        // console.log("After Update: " + props.state.status)
-
-
-        setInterval(() => {
-            if (props.state.status === "dropped") {
-                let table = document.getElementById(`${props.id}`);
-                table.style.cssText = `position:absolute !important;top:${top - 244}px;left:${left - 44}px`;
-            }
-        }, 5);
+        const newValue = {
+            "id": props.id,
+            "tableName": props.tableName,
+            "ClassName": props.className,
+            "status": "dropped",
+            "position": "absolute",
+            "left": left - 44,
+            "top": top - 244
+        }
+        props.UpdateTable(newValue);
+        console.log(props.status)
 
         console.log("left:" + (left - 20), "top:" + (top - 20));
         console.log(props.id)
     }
-
 
     return (
         <Fragment>

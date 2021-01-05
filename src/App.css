@@ -64,3 +64,43 @@
 h3 {
   margin-left: 20px;
 }
+.Download {
+  background-color: tomato;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin: 30px 50px 50px;
+  float: right;
+}
+.Download:hover,
+.view:hover,
+.create:hover {
+  color: black;
+  background-color: rgba(64, 224, 208, 0.63);
+}
+.view {
+  background-color: tomato;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin: 30px -30px 50px;
+  float: right;
+}
+.create {
+  background-color: tomato;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
