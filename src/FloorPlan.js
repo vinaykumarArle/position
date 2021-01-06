@@ -18,6 +18,7 @@ function FloorPlan() {
                         className={table.ClassName}
                         status={table.status}
                         style={{ position: table.position, top: (table.top) + 'px', left: (table.left) + 'px' }}
+                        onClick={() => alert("Hi vinay !!")}
                     >
                         {table.tableName}
                     </div>
