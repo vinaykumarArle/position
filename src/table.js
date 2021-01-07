@@ -4,22 +4,21 @@ const Table = (props) => {
 
     const getPosition = (e) => {
         e.preventDefault();
-        let left = e.pageX;
-        let top = e.pageY;
-
+        let left = (Math.abs(e.pageX - props.cleft) / (props.dwidth)) * 100;
+        let top = (Math.abs(e.pageY - props.ctop) / (props.dheight)) * 100;
+        console.log(props.dwidth, props.dheight)
+        console.log("Actual :x: ", e.pageX, "y:", e.pageY, "container-Top:", props.ctop, "container-Left:", props.cleft)
         const newValue = {
             "id": props.id,
             "tableName": props.tableName,
             "ClassName": props.className,
             "status": "dropped",
             "position": "absolute",
-            "left": left - 44,
-            "top": top - 244
+            "left": Math.floor(left),
+            "top": Math.floor(top)
         }
         props.UpdateTable(newValue);
-        console.log(props.status)
-
-        console.log("left:" + (left - 20), "top:" + (top - 20));
+        console.log("left:" + (Math.floor(left)) + "%", "top:" + (Math.floor(top)) + "%");
         console.log(props.id)
     }
 
