@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom';
 import uItems from './FloorPlan.json'
 function FloorPlan() {
 
+    var leftLow = uItems.map(table => (
+        parseInt(table.left)
+    ))
+    var topLow = uItems.map(table => (
+        parseInt(table.top)
+    ))
+
+    const leftPo = Math.min.apply(Math, leftLow) - 40
+    const topPo = Math.min.apply(Math, topLow) - 40
+    console.log("low-left: ", leftPo, "low-top: ", topPo)
+
     return (
         <Fragment>
             <div className="container">
@@ -17,11 +28,10 @@ function FloorPlan() {
                     {uItems.map(table => (
                         <div
                             key={table.id}
-                            draggable
                             className={table.ClassName}
                             status={table.status}
-                            style={{ position: table.position, top: (table.top) + '%', left: (table.left) + '%' }}
-                            onClick={() => alert("Hi vinay !!")}
+                            style={{ position: table.position, top: (table.top - topPo) + 'px', left: (table.left - leftPo) + 'px' }}
+                            onClick={() => alert("Hi vinay, you clicked on Table : " + table.tableName)}
                         >
                             {table.tableName}
                         </div>

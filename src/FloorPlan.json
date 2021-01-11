@@ -1,48 +1,14 @@
 [
     {
-        "id": 5,
-        "tableName": "C1",
-        "ClassName": "circle-table",
-        "status": "dropped",
-        "position": "absolute",
-        "left": 418,
-        "top": 63
-    },
-    {
-        "id": 6,
-        "tableName": "C2",
-        "ClassName": "circle-table",
-        "status": "dropped",
-        "position": "absolute",
-        "left": 417,
-        "top": 362
-    },
-    {
-        "id": 7,
-        "tableName": "C3",
-        "ClassName": "circle-table",
-        "status": "dropped",
-        "position": "absolute",
-        "left": 289,
-        "top": 188
-    },
-    {
-        "id": 8,
-        "tableName": "C4",
-        "ClassName": "circle-table",
-        "status": "dropped",
-        "position": "absolute",
-        "left": 546,
-        "top": 192
-    },
-    {
         "id": 9,
         "tableName": "R1",
         "ClassName": "rectangle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 286,
-        "top": 63
+        "leftPer": 49,
+        "topPer": 24,
+        "left": 673,
+        "top": 377
     },
     {
         "id": 10,
@@ -50,8 +16,10 @@
         "ClassName": "rectangle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 514,
-        "top": 65
+        "leftPer": 59,
+        "topPer": 24,
+        "left": 805,
+        "top": 377
     },
     {
         "id": 11,
@@ -59,8 +27,10 @@
         "ClassName": "rectangle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 283,
-        "top": 365
+        "leftPer": 54,
+        "topPer": 8,
+        "left": 737,
+        "top": 279
     },
     {
         "id": 12,
@@ -68,35 +38,54 @@
         "ClassName": "rectangle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 514,
-        "top": 362
+        "leftPer": 54,
+        "topPer": 41,
+        "left": 740,
+        "top": 484
     },
     {
-        "id": 1,
-        "tableName": "T1",
-        "ClassName": "square-table",
+        "id": 8,
+        "tableName": "C4",
+        "ClassName": "circle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 291,
-        "top": 277
+        "leftPer": 42,
+        "topPer": 24,
+        "left": 578,
+        "top": 380
     },
     {
-        "id": 2,
-        "tableName": "T2",
-        "ClassName": "square-table",
+        "id": 7,
+        "tableName": "C3",
+        "ClassName": "circle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 417,
-        "top": 279
+        "leftPer": 69,
+        "topPer": 24,
+        "left": 934,
+        "top": 380
     },
     {
-        "id": 3,
-        "tableName": "T3",
-        "ClassName": "square-table",
+        "id": 5,
+        "tableName": "C1",
+        "ClassName": "circle-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 537,
-        "top": 277
+        "leftPer": 69,
+        "topPer": 42,
+        "left": 935,
+        "top": 493
+    },
+    {
+        "id": 6,
+        "tableName": "C2",
+        "ClassName": "circle-table",
+        "status": "dropped",
+        "position": "absolute",
+        "leftPer": 42,
+        "topPer": 42,
+        "left": 582,
+        "top": 494
     },
     {
         "id": 4,
@@ -104,7 +93,42 @@
         "ClassName": "square-table",
         "status": "dropped",
         "position": "absolute",
-        "left": 416,
-        "top": 191
+        "leftPer": 42,
+        "topPer": 58,
+        "left": 578,
+        "top": 594
+    },
+    {
+        "id": 3,
+        "tableName": "T3",
+        "ClassName": "square-table",
+        "status": "dropped",
+        "position": "absolute",
+        "leftPer": 50,
+        "topPer": 58,
+        "left": 677,
+        "top": 592
+    },
+    {
+        "id": 2,
+        "tableName": "T2",
+        "ClassName": "square-table",
+        "status": "dropped",
+        "position": "absolute",
+        "leftPer": 58,
+        "topPer": 58,
+        "left": 782,
+        "top": 592
+    },
+    {
+        "id": 1,
+        "tableName": "T1",
+        "ClassName": "square-table",
+        "status": "dropped",
+        "position": "absolute",
+        "leftPer": 66,
+        "topPer": 58,
+        "left": 888,
+        "top": 592
     }
 ]

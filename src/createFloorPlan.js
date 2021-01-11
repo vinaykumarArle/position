@@ -20,7 +20,6 @@ function Create() {
         e.preventDefault();
     }
 
-
     const UpdateTable = (values) => {
         setUItems(oldValues => [...oldValues, values]);
         setIsDropped("true");
@@ -34,7 +33,6 @@ function Create() {
         setHeight(parseInt(po.offsetHeight));
         setCTop(parseInt(po.offsetTop));
         setcLeft(parseInt(po.offsetLeft));
-        console.log(width, height, cTop, cLeft);
     })
 
     const getPosition = (e, Table) => {
@@ -52,18 +50,16 @@ function Create() {
                 "ClassName": nTable.ClassName,
                 "status": "dropped",
                 "position": "absolute",
-                "left": table.left,
-                "top": table.top
+                "leftPer": table.left,
+                "topPer": table.top,
+                "left": e.pageX,
+                "top": e.pageY
             }
             const NT = uItems.filter(table => table.id !== nTable.id).concat(newTable)
             setUItems(NT)
-            console.log(left, top, table.left, table.top, NT)
-            console.log(table)
         }
         newPosition(Table);
     }
-    console.log(uItems)
-
     return (
         <Fragment>
             <div className="container">
@@ -98,7 +94,7 @@ function Create() {
                             draggable
                             className={table.ClassName}
                             status={table.status}
-                            style={{ position: table.position, top: (table.top) + '%', left: (table.left) + '%' }}
+                            style={{ position: table.position, top: (table.topPer) + '%', left: (table.leftPer) + '%' }}
                             onDragEnd={(e) => getPosition(e, table)}
                         >
                             {table.tableName}
