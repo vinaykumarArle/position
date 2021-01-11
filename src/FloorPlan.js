@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import uItems from './FloorPlan.json'
 function FloorPlan() {
 
+    //setting initial position to re-render items
     var leftLow = uItems.map(table => (
         parseInt(table.left)
     ))
